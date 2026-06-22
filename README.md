@@ -12,7 +12,7 @@ git fetch
 Day-2
 -Html files create with basics (using basics elemnts created the Portfolio website)
 -using all attributes created the table and list and etc
--usemap function in the image
+-usemap function in the image(Website for this used is:-image-map.net)
 -Created the simple form
 -changed the color of visited links,unvisited links,active links and the hover color. 
 
