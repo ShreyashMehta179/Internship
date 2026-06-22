@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Element</title>
+    <style>
+        div.container
+        {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            gap: 10px;
+        }
+        .Design
+        {
+          font-size: 20px;
+          display: flex;
+           justify-content:center;
+           align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+      <div style="background-color: bisque; border: ridge;">
+       <h2 style="text-align: center;">ABOUT</h2> 
+      <p>
+        I am Shreyash Mehta, a Computer Engineering student with a strong passion
+        for software development, web technologies, artificial intelligence, and
+        problem-solving.
+      </p>
+      </div>
+      <div style="background-color:yellow; border: ridge;"">
+         <h2  style="text-align: center;">Skills</h2> 
+       <p>
+        Java, C, C++, Python, SQL, JavaScript, HTML, CSS, Bootstrap,
+        React.js, Next.js, Node.js, Express.js, MongoDB, MySQL, Git, GitHub.
+       </p>
+       </div> 
+       <div style="background-color: red; border: ridge;"">
+         <h2 style="text-align: center;">Projects</h2>
+        <p>
+        E-Tongue for Dravya Identification is my major project that focuses on
+        identifying medicinal substances using sensor-based analysis and machine
+        learning techniques.
+       </p>
+       </div>
+      </div> -->
+      <div class="container">
+      <div style="background-color: bisque; border: ridge;">
+       <h2 style="text-align: center;">ABOUT</h2> 
+      <p>
+        I am Shreyash Mehta, a Computer Engineering student with a strong passion
+        for software development, web technologies, artificial intelligence, and
+        problem-solving.
+      </p>
+      </div>
+      <div style="background-color:yellow; border: ridge;"">
+         <h2  style="text-align: center;">Skills</h2> 
+       <p>
+        Java, C, C++, Python, SQL, JavaScript, HTML, CSS, Bootstrap,
+        React.js, Next.js, Node.js, Express.js, MongoDB, MySQL, Git, GitHub.
+       </p>
+       </div> 
+       <div style="background-color: red; border: ridge;"">
+         <h2 style="text-align: center;">Projects</h2>
+        <p>
+        E-Tongue for Dravya Identification is my major project that focuses on
+        identifying medicinal substances using sensor-based analysis and machine
+        learning techniques.
+       </p>
+       </div>
+    </div>
+    <button onclick="Hide_Deatils()" class="Design">Hide Deatils</button>
+    <script>
+      function Hide_Deatils()
+      {
+       var x=document.getElementsByClassName("container");
+       for(var i=0;i<x.length;i++)
+       {
+        x[i].style.display="none"
+       }
+      }
+
+
+    </script>
+
+
+</body>
+</html>
