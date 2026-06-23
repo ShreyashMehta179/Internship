@@ -64,3 +64,13 @@ main
     background-size: cover;
     background-repeat: no-repeat
 }
+#btn-color1
+{
+    margin-left: 130px;
+}
+#btn-color2
+{
+    margin-left: 130px;
+    text-align: center;
+    align-items: center;
+}
