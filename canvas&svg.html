@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .draw
+        {
+           display: flex;
+           gap: 450px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="draw">
+    <canvas id="mycanvas" width="300" height="200" style="border: 2px ridge black;"></canvas>
+    <canvas id="mycanvas1" width="300" height="200" style="border: 2px ridge black;"></canvas>
+    <canvas id="mycanvas2" width="300" height="200" style="border: 2px ridge black;"></canvas>
+    <canvas id="mycanvas3" width="300" height="200" style="border: 2px ridge black;"></canvas>
+    <canvas id="mycanvas4" width="300" height="200" style="border: 2px ridge black; text-align: center;"></canvas>
+    <canvas id="mycanvas5" width="300" height="200" style="border: 2px ridge black;"></canvas>
+
+     <svg width="420" height="300">
+            <rect x="10" y="10" width="300" height="200" stroke="red" stroke-width="5"  fill="blue"></rect>
+        </svg>
+
+        <svg width="420" height="300">
+         <circle cx="100" cy="100" r="50" stroke="red" stroke-width="5"></circle>
+        </svg>
+
+    </div>
+    <script>
+      let canvas=document.getElementById("mycanvas");
+      let ctx=canvas.getContext("2d");
+      ctx.fillStyle="blue";
+      ctx.fillRect(50,50,100,80);
+
+      let c1=document.getElementById("mycanvas1");
+      let ctx1=c1.getContext("2d");
+      ctx1.beginPath();
+      ctx1.moveTo(20,20);
+      ctx1.lineTo(200,100);
+      ctx1.lineWidth=10;
+      ctx1.stroke();
+
+      let c2=document.getElementById("mycanvas2");
+      let ctx2=c2.getContext("2d");
+      ctx2.beginPath();
+      ctx2.arc(150, 100, 40, 0, 2*Math.PI);
+      ctx2.stroke();
+
+      let c3=document.getElementById("mycanvas3");
+      let ctx3=c3.getContext("2d");
+      ctx3.font="30px Arial"
+      ctx3.fillText("SHREYASH MEHTA",10,90);
+
+      let c4=document.getElementById("mycanvas4");
+      let ctx4=c4.getContext("2d");
+      ctx4.font="30px Arial";
+      ctx4.lineWidth="3"
+      ctx4.strokeText("Shreyash Mehta",10,90);
+
+      let c5=document.getElementById("mycanvas5");
+      let ctx5=c5.getContext("2d");
+      let grd=ctx5.createLinearGradient(0,0,200,0);
+      grd.addColorStop(0,"red");
+      grd.addColorStop(0.5,"green");
+      grd.addColorStop(1,"blue");
+      ctx5.fillStyle=grd;
+      ctx5.fillRect(0,0,c5.width,c5.height);
+
+
+    </script>
+</body>
+</html>

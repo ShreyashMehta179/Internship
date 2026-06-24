@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Tag</title>
+</head>
+<body>
+    <button  onclick="start_pause()">start/pause</button>
+    <button  onclick="Small()">Small</button>
+    <button onclick="big()">Big</button>
+    <button onclick="normal()">Normal</button><br>
+    <video id="face_attendence_system" width="800" height="600" poster="Images/Logo_of_Shreyash.jpg" controls>
+        <source src="video/Face Recognition Attendance System.mp4">
+    </video>
+  <script>
+   let video=document.getElementById("face_attendence_system");
+   
+   function start_pause()
+   {
+       if(video.paused)
+       {
+        video.play();
+       }
+       else
+       {
+        video.pause();
+       }
+   }
+   function Small()
+   {
+     video.width=320;
+   }
+   
+   function big()
+   {
+     video.width=1000;
+     video.height=700;
+   }
+    
+   function normal()
+   {
+    video.width=800;
+   }
+  </script>
+
+</body>
+</html>
